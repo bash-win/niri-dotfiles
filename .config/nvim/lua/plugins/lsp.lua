@@ -95,6 +95,11 @@ return {
         on_attach = on_attach,
       })
 
+      vim.lsp.config("tinymist", {
+	  capabilities = capabilities,
+	  on_attach = on_attach,
+      })
+
       vim.lsp.config("lua_ls", {
         capabilities = capabilities,
         on_attach = on_attach,
@@ -122,6 +127,7 @@ return {
         "ts_ls",
         "zls",
         "lua_ls",
+	"tinymist",
       })
 
       -- --------------------------------
